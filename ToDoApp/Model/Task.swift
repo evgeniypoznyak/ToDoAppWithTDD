@@ -8,13 +8,15 @@
 import Foundation
 
 struct Task {
-    var title: String
-    var description: String?
+    let title: String
+    let description: String?
     let date: Date
+    let localtion: Location?
     
-    init(title: String, description: String? = nil) {
+    init(title: String, description: String? = nil, location: Location? = nil) {
         self.title = title
         self.description = description
+        self.localtion = location
         self.date = Date()
     }
 }
